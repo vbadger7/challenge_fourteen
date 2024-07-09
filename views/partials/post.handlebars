@@ -1,0 +1,11 @@
+<div class="post">
+    <h2>{{title}}</h2>
+    <p>{{content}}</p>
+    <p>Posted by {{user.username}} on {{createdAt}}</p>
+    {{#if logged_in}}
+    <form class="comment-form">
+        <textarea name="comment-body" placeholder="Add a comment..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    {{/if}}
+</div>
